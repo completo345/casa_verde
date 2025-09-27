@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Casa Verde - Home</title>
+</head>
+<body>
+    <h1>Bienvenido {{ request.user.username }} 🌿</h1>
+    <p>Selecciona a dónde quieres ir:</p>
+
+    <nav>
+        <ul>
+            <li><a href="/usuarios/">Gestión de usuarios</a></li>
+            <li><a href="/materiales/">Gestión de materiales</a></li>
+            <li><a href="/usuarios/logout/">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
