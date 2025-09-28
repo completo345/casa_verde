@@ -7,28 +7,10 @@ El proyecto **`casa_verde`** es una aplicación web construida con **Django 5.2.
 - Gestión de materiales (`materiales`)
 - Protección de rutas privadas (solo usuarios autenticados pueden acceder a ciertas páginas)
 
-Proyecto_inicial/
-│
-├── casa_verde/ # Proyecto principal
-│ ├── settings.py # Configuración de Django
-│ ├── urls.py # URLs principales del proyecto
-│ └── views.py # Vista de home
-│
-├── registro_user/ # App de usuarios
-│ ├── urls.py # URLs de registro, login y logout
-│ ├── views.py # Funciones de registro y login personalizado
-│ ├── forms.py # Formulario de registro personalizado
-│ └── templates/registro_user/ # Plantillas de login y registro
-│ ├── login.html
-│ └── registro.html
-│
-├── materiales/ # App de materiales
-│ ├── urls.py # URLs de la app de materiales
-│ ├── views.py # Funciones para ver lista de materiales
-│ └── templates/materiales/ # Plantillas de materiales
-│
-├── templates/ # Plantillas globales del proyecto
-│ └── home.html # Página home
-│
-├── manage.py # Script principal de Django
-└── db.sqlite3 # Base de datos SQLite (generada tras migraciones)
+Flujo de la aplicación
+
+- Usuario accede a /usuarios/registro/ para crear cuenta.
+- Tras registro, se redirige automáticamente a home.
+- Usuario puede iniciar sesión en /usuarios/login/.
+- Si intenta acceder a rutas protegidas (home o materiales) sin login → se redirige a login.
+- Logout en /usuarios/logout/ → redirige a login.
