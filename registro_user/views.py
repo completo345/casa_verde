@@ -31,3 +31,23 @@ def login_view(request):
     return render(request, 'registro_user/login.html', {'form': form})
 
 # Create your views here.
+# help me plaese
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# leave me alone
