@@ -46,7 +46,20 @@
 
         nav a:hover {
             text-decoration: underline;
+
         }
+
+        .image-button {
+            display: inline-block;
+            border-radius: 30px;
+            margin: 2px;
+            }
+
+        .button-icon {
+            width: 500x; 
+            height: 200px;
+            margin-right: 40px;}
+
     </style>
 </head>
 <body>
@@ -56,6 +69,12 @@
     <h1 class="texto_1">Bienvenido {{ request.user.username }} 🌿</h1>
 
     <p>Selecciona a dónde quieres ir:</p>
+
+    <a href="/materiales/">
+    <button class="image-button">
+        <img src="{% static 'formulario.svg' %}" alt="formulario" class="button-icon">
+    </button>
+    </a>
 
     <nav>
         <ul>
