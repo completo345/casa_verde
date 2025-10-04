@@ -2,10 +2,11 @@
 <!DOCTYPE html>
 <html>
 <style>
-    h1 { color:rgb(28, 128, 66);
+    .texto_1 {color:rgb(28, 128, 66);
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    font-size: xx-large;}
+    font-size: 55px;
+    text-shadow: 2px 5px rgba(75, 42, 12, 0.733);}
 
     body { background-color: rgb(161, 224, 118);}
 
@@ -14,9 +15,10 @@
     <title>Casa Verde - Home</title>
 </head>
 <body>
-    <img src="logo_form.svg" alt = "logo"/>
 
-    <h1>Bienvenido {{ request.user.username }} 🌿</h1>
+    <img class="logo_form" src="logo_form.svg" alt="logo">
+
+    <h1 class="texto_1">Bienvenido {{ request.user.username }} 🌿</h1>
 
     <p>Selecciona a dónde quieres ir:</p>
 
