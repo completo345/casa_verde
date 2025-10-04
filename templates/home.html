@@ -20,7 +20,7 @@
 </head>
 <body>
 
-    <img src="logo.svg" alt="logo" style="width: 200px; border: 1px solid rgb(0, 0, 0);">
+    <img src="{% static 'logo.svg' %}" alt="logo" class="logo_form">
 
 
     <h1 class="texto_1">Bienvenido {{ request.user.username }} 🌿</h1>
