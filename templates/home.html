@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
+<style>
+    h1 { color:rgb(28, 128, 66);
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: larger;}
+</style>
 <head>
     <title>Casa Verde - Home</title>
 </head>
 <img src="casa_verde/static/images/dibujo_logo1.svg" alt = "logo">
 <body>
+
     <h1>Bienvenido {{ request.user.username }} 🌿</h1>
 
     <p>Selecciona a dónde quieres ir:</p>
