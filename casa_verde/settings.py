@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 #bueno pudo ser mucho peor, como hacer esto en C, java , o un lenguaje ensamblador que ni Dios sabra lo que hace.
 #si no tienes ni puta idea de que es todo esto bajo ninguna pretexto toques nada de este archivo sin consultar en primero a chatgpt o adulto responsable
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -118,7 +119,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 
 #redireccion despues de iniciar secion y cerrar
 LOGIN_URL='login'
