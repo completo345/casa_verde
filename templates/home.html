@@ -7,58 +7,50 @@
     <title>Casa Verde - Home</title>
     <style>
         body {
-            background-color: rgb(161, 224, 118);
-            font-family: Arial, sans-serif;
-            text-align: center; 
-        }
+            margin: 0;
+            padding: 0;
+            background-image: url('{% static 'fondo.svg' %}');
+            background-size: cover;       
+            background-position: center;   
+            background-repeat: no-repeat;}
 
-        .texto_1 {
-            color: rgb(28, 128, 66);
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-style: italic;
-            font-size: 55px;
-            text-shadow: 2px 2px rgba(49, 29, 11, 0.733);
-            margin-top: 20px;
-        }
+        .cajita {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #2c5a2a; 
+            padding: 25px; 
+            border: 2px #ccc; 
+            border-radius: 150px; 
+            width: 300px; 
+            margin: 20px auto; 
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.123); }
 
         .logo_form {
             width: 400px; 
             display: block;
-            margin: 30px auto;
-        }
+            margin: 30px auto;}
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin-top: 20px;
-        }
+        .contenedor-botones {
+            display: flex;
+            gap: 20px; 
+            justify-content: center; 
+            align-items: center; 
+            padding: 20px;}
 
-        nav li {
-            margin: 10px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: rgb(28, 128, 66);
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-
-        }
-
-        .image-button {
+        .boton-img {
             display: inline-block;
-            border-radius: 30px;
-            margin: 2px;
-            }
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;}
 
-        .button-icon {
-            width: 500x; 
-            height: 200px;
-            margin-right: 40px;}
+        .boton-img img {
+            width: 200px; 
+            transition: transform 0.2s;}
+
+        .boton-img:hover img {
+            transform: scale(1.1); }
 
     </style>
 </head>
@@ -66,23 +58,21 @@
 
     <img src="{% static 'logo.svg' %}" alt="logo" class="logo_form">
 
-    <h1 class="texto_1">Bienvenido {{ request.user.username }} 🌿</h1>
+    <div class="cajita">
+        <h1 style="margin-top: 0;">Bienvenido {{ request.user.username }}</h1>
+        <p>¡Gracias por ayudar al planeta!</p>
+    </div>
 
-    <p>Selecciona a dónde quieres ir:</p>
-
-    <a href="/materiales/">
-    <button class="image-button">
-        <img src="{% static 'formulario.svg' %}" alt="formulario" class="button-icon">
-    </button>
-    </a>
-
-    <nav>
-        <ul>
-            <li><a href="/usuarios/">Gestión de usuarios</a></li>
-            <li><a href="/materiales/">Gestión de materiales</a></li>
-            <li><a href="{% url 'logout' %}">Cerrar sesión</a></li>
-        </ul>
-    </nav>
-
+    <div class="contenedor-botones">
+        <a href="{% url 'logout' %}" class="boton-img">
+            <img src="{% static 'cerrar.svg' %}" alt="Botón 1">
+        </a>
+        <a href="/usuarios/" class="boton-img">
+            <img src="{% static 'proyecto.svg' %}" alt="Botón 2">
+        </a>
+        <a href="/materiales/" class="boton-img">
+            <img src="{% static 'materiales.svg' %}" alt="Botón 3">
+        </a>
+    </div>
 </body>
 </html>
