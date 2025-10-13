@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 #bueno pudo ser mucho peor, como hacer esto en C, java , o un lenguaje ensamblador que ni Dios sabra lo que hace.
 #si no tienes ni puta idea de que es todo esto bajo ninguna pretexto toques nada de este archivo sin consultar en primero a chatgpt o adulto responsable
+#todos los html creados por 345 fueron hechos con chat gpt, no le pregunten como funcinan pero lo hacen
 from pathlib import Path
 import os
 
@@ -308,4 +309,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
-#me gustaria declarar lo que siento por ella pero solo se declarar variables y funciones :(
+#me gustaria declarar lo que siento por ella pero solo se declarar variables :(

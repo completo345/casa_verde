@@ -2,8 +2,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('',views.index, name='materiales'),
+   path('datos-terreno/', views.editar_datos_terreno, name='editar_datos_terreno'),
 ]
 
 
-#por culpa de estas lineas de codigo casi mando a la mierda todo, en fin
+#solo espero que funcione 
