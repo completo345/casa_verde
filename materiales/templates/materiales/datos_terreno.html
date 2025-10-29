@@ -1,0 +1,17 @@
+<h2>Datos Climáticos Guardados</h2>
+
+{% if registro %}
+<p><strong>Provincia:</strong> {{ registro.provincia }}</p>
+<p><strong>Latitud:</strong> {{ registro.lat }}</p>
+<p><strong>Longitud:</strong> {{ registro.lon }}</p>
+<p><strong>Temp Promedio (°C):</strong> {{ registro.temp_avg }}</p>
+<p><strong>Radiación Solar (kWh/m²/día):</strong> {{ registro.irr_avg }}</p>
+<p><strong>Viento Promedio (m/s):</strong> {{ registro.wind_avg }}</p>
+<p><em>Última actualización: {{ registro.fecha_actualizacion }}</em></p>
+
+<a href="{% url 'elegir_provincia' %}">Cambiar Provincia</a>
+
+{% else %}
+<p>No has ingresado datos aún.</p>
+<a href="{% url 'elegir_provincia' %}">Seleccionar Provincia</a>
+{% endif %}

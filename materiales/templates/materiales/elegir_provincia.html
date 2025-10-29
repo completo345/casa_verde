@@ -1,0 +1,7 @@
+<h2>Seleccionar Provincia</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar y obtener clima</button>
+</form>
