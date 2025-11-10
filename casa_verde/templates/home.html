@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Casa Verde - Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('{% static 'fondo.svg' %}');
+            background-size: cover;       
+            background-position: center;   
+            background-repeat: no-repeat;}
+
+        .cajita {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #2c5a2a; 
+            padding: 25px; 
+            border: 2px #ccc; 
+            border-radius: 150px; 
+            width: 300px; 
+            margin: 20px auto; 
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.123); }
+
+        .logo_form {
+            width: 400px; 
+            display: block;
+            margin: 30px auto;}
+
+        .contenedor-botones {
+            display: flex;
+            gap: 20px; 
+            justify-content: center; 
+            align-items: center; 
+            padding: 20px;}
+
+        .boton-img {
+            display: inline-block;
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;}
+
+        .boton-img img {
+            width: 200px; 
+            transition: transform 0.2s;}
+
+        .boton-img:hover img {
+            transform: scale(1.1); }
+
+    </style>
+</head>
+<body>
+
+    <img src="{% static 'logo.svg' %}" alt="logo" class="logo_form">
+
+    <div class="cajita">
+        <h1 style="margin-top: 0;">Bienvenido {{ request.user.username }}</h1>
+        <p>¡gracias por ayudar al planeta!</p>
+    </div>
+
+    <div class="contenedor-botones">
+        <a href="{% url 'logout' %}" class="boton-img">
+            <img src="{% static 'cerrar.svg' %}" alt="Botón 1">
+        </a>
+        <a href="/usuarios/" class="boton-img">
+            <img src="{% static 'botonproyecto.svg' %}" alt="Botón 2">
+        </a>
+        <a href="/materiales/" class="boton-img">
+            <img src="{% static 'materiales.svg' %}" alt="Botón 3">
+            <a href="{% url 'editar_datos_terreno' %}" class="btn btn-primary">Ingresar / Editar Datos del Terreno</a>
+        </a>
+    </div>
+</body>
+</html>
