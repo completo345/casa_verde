@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Materiales</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        h2 {
+            text-align: center;
+            background-color: #e0e0e0;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Lista de Materiales</h1>
+
+    {% regroup materiales by get_categoria_display as categorias %}
+    {% for categoria in categorias %}
+        <h2>{{ categoria.grouper }}</h2>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+            </tr>
+            {% for material in categoria.list %}
+                <tr>
+                    <td>{{ material.nombre }}</td>
+                    <td>{{ material.descripcion }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endfor %}
+</body>
+</html>
