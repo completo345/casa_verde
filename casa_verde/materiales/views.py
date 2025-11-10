@@ -25,4 +25,4 @@ def editar_datos_terreno(request):
 
 def lista_materiales(request):
     materiales = Material.objects.all().order_by('categoria', 'nombre')
-    return render(request, 'materiales/lista.html', {'materiales': materiales})
+    return render(request, 'materiales/lista_materiales.html', {'materiales': materiales})
