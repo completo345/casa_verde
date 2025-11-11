@@ -65,14 +65,13 @@
 
     <div class="contenedor-botones">
         <a href="{% url 'logout' %}" class="boton-img">
-            <img src="{% static 'cerrar.svg' %}" alt="Botón 1">
+            <img src="{% static 'cerrarsesion.svg' %}" alt="Botón 1">
         </a>
-        <a href="/usuarios/" class="boton-img">
-            <img src="{% static 'botonproyecto.svg' %}" alt="Botón 2">
+        <a href="{% url 'datos_terreno' %}"class="boton-img">
+            <img src="{% static 'proyecto1.svg' %}" alt="Botón 2">
         </a>
         <a href="/materiales/" class="boton-img">
-            <img src="{% static 'materiales.svg' %}" alt="Botón 3">
-           <a href="{% url 'datos_terreno' %}">Ver datos de mi terreno</a>
+            <img src="{% static 'materiales1.svg' %}" alt="Botón 3">
         </a>
     </div>
 </body>

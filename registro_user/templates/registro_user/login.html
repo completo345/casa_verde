@@ -1,15 +1,82 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>Login</title>
 </head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('{% static 'fondo2.svg' %}');
+            background-size: cover;       
+            background-position: center;   
+            background-repeat: no-repeat;}
+
+         .logo_form {
+            width: 400px; 
+            margin: 5px;
+            position: absolute;
+            top: 0px;
+            left: 0px;}
+
+        .login-container {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;    
+            justify-content: center; 
+            min-height: 100vh;      
+            text-align: center;
+            color: rgb(247, 247, 188)
+
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-container form button {
+            margin-top: 5px;
+            font-size: 16px;
+    
+        }
+
+        .registro {
+            color: #e4fdc7;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            transition: 0.3s;
+        }
+
+        .registro:hover {
+            background-color: #282137ff;
+            color: white;
+        }
+
+
+    </style>
+
 <body>
-    <h2>Iniciar sesión</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Entrar</button>
-    </form>
-    <p>¿No tienes cuenta? <a href="{% url 'registro' %}">Regístrate</a></p>
+
+    <img src="{% static 'logonoche.svg' %}" alt="logo" class="logo_form">
+    <div class="login-container">
+        <h2>
+            <img src="{% static 'sesion.svg' %}" alt="Iniciar sesión" width="200">
+        </h2>
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Entrar</button>
+        </form>
+
+        <p>¿No tienes cuenta? 
+            <a href="{% url 'registro' %}" class="registro">Regístrate</a>
+        </p>
+
+    </div>
+
 </body>
 </html>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="sesion.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="7.0555555"
+     inkscape:cx="38.267717"
+     inkscape:cy="22.181102"
+     inkscape:window-width="1366"
+     inkscape:window-height="697"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="6.2362205"
+       y="1.8425197"
+       width="44.503937"
+       height="42.944882"
+       id="rect6" />
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833px;line-height:1.4;font-family:forte;-inkscape-font-specification:forte;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#389b3c;stroke-width:0.0349999"
+       x="2.25"
+       y="7.9499998"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="stroke-width:0.035"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.45416px;line-height:1.4;font-family:forte;-inkscape-font-specification:forte;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#eeee69;fill-opacity:1;stroke-width:0.0368257"
+       x="0.59558815"
+       y="6.2735353"
+       id="text4"
+       transform="scale(1.0521654,0.95042092)"><tspan
+         sodipodi:role="line"
+         style="fill:#eeee69;fill-opacity:1;stroke-width:0.0368258"
+         x="0.59558815"
+         y="6.2735353"
+         id="tspan4">iniciar</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;line-height:1.4;font-family:Forte;-inkscape-font-specification:Forte;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:143.199;display:inline;fill:#eeee69;fill-opacity:1;fill-rule:nonzero;stroke-width:0.266323;stroke-dasharray:none"
+       x="-33.599998"
+       y="60"
+       id="text5"
+       transform="matrix(0.17240098,0,0,0.18450635,6.4549632,-1.4087161)"><tspan
+         x="-33.599998"
+         y="60"
+         id="tspan2">sesion</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458334)"
+       id="text6"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.4;font-family:forte;-inkscape-font-specification:forte;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect6);display:inline;fill:#389b3c;fill-opacity:1;stroke-width:0.132283" />
+    <path
+       sodipodi:type="star"
+       style="fill:#eeee69;fill-opacity:1;stroke-width:0.0349999"
+       id="path6"
+       inkscape:flatsided="false"
+       sodipodi:sides="5"
+       sodipodi:cx="0.75"
+       sodipodi:cy="0.22499999"
+       sodipodi:r1="1.4475195"
+       sodipodi:r2="0.72375971"
+       sodipodi:arg1="1.2818209"
+       sodipodi:arg2="1.9101394"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 1.1625001,1.6125001 0.50908377,0.90748625 -0.44212148,1.046072 0.02646979,0.2067749 -0.39927165,-0.65504972 0.54374997,-0.46874999 1.2318325,-1.1399726 1.3460607,-0.18553598 2.1970605,0.26145024 1.3246358,0.6650248 Z"
+       inkscape:transform-center-x="-0.10211264"
+       inkscape:transform-center-y="0.0081945929"
+       transform="matrix(0.80107473,0,0,0.72751773,8.874551,6.5518778)" />
+  </g>
+</svg>

@@ -1,16 +1,60 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>Registro</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('{% static 'fondo3.svg' %}');
+            background-size: cover;       
+            background-position: center;   
+            background-repeat: no-repeat;}
+
+        
+        .logo_form {
+            width: 400px; 
+            margin: 0px;
+            position: absolute;
+            top: 60px;
+            left: 0px;}
+
+        .login-container {
+            text-align: center
+    
+        }
+
+        .logo_form1 {
+            width: 300px;  
+            height: auto;
+            margin-bottom: 0px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    </style>
 </head>
 <body>
-    <h2>Crear cuenta</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Registrarme</button>
-    </form>
-    <p>¿Ya tienes cuenta? <a href="{% url 'login' %}">Inicia sesión</a></p>
+    <img src="{% static 'logoatardecer.svg' %}" alt="logo" class="logo_form">
+    <div class="login-container">
+        <h2>
+            <img src="{% static 'registrar.svg' %}" alt="registro" class="logo_form1">
+        </h2>
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Registrarme</button>
+        </form>
+
+        <p>¿Ya tienes cuenta? 
+            <a href="{% url 'login' %}">Inicia sesión</a>
+        </p>
+    </div>
 </body>
 </html>
-# esto esta mas feo que patada en las weas, pero no pienso gastar mas de mi salud mental
