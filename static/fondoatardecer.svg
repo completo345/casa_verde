@@ -15,7 +15,7 @@
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
      id="namedview1"
-     pagecolor="#ffffff"
+     pagecolor="#ffba1b"
      bordercolor="#000000"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
@@ -45,61 +45,40 @@
        height="1439.1038"
        x="-40.729347"
        y="-16.970562" />
-    <rect
-       style="fill:#8497b5;fill-opacity:0.545098;stroke-width:0.036304"
-       id="rect4"
-       width="1798.8795"
-       height="563.22284"
-       x="-98.429268"
-       y="-48.540958" />
-    <rect
-       style="fill:#a39db2;fill-opacity:0.075188;stroke-width:0.0245828"
-       id="rect4-7-3"
-       width="1754.7561"
-       height="264.74078"
-       x="-108.50688"
-       y="547.97839" />
-    <rect
-       style="fill:#9d98ae;fill-opacity:0.394737;stroke-width:0.028317"
-       id="rect4-7"
-       width="1764.9385"
-       height="349.25247"
-       x="-90.024551"
-       y="513.46649" />
     <ellipse
-       style="fill:#ffba1b;fill-opacity:0.962406;stroke-width:0.0349999"
+       style="fill:#fbba5d;fill-opacity:0.545098;stroke-width:0.045239"
+       id="path11"
+       cx="1604.4"
+       cy="1005.6001"
+       rx="341.99997"
+       ry="134.39999" />
+    <ellipse
+       style="fill:#ffba1b;fill-opacity:0.962406;stroke-width:0.0282572"
        id="path3"
-       cx="780.64594"
-       cy="785.73706"
-       rx="308.86426"
-       ry="303.77307" />
+       cx="790.24597"
+       cy="958.53705"
+       rx="275.26425"
+       ry="222.17308" />
     <ellipse
-       style="fill:#8ea700;fill-opacity:0.943609;stroke-width:0.0361064"
+       style="fill:#8ea700;fill-opacity:1;stroke-width:0.0361064"
        id="path2"
        cx="782.34296"
        cy="1225.8191"
        rx="901.37811"
        ry="346.3201" />
     <ellipse
-       style="fill:#fbba5d;fill-opacity:0.545098;stroke-width:0.0349999"
+       style="fill:#fbba5d;fill-opacity:0.545098;stroke-width:0.0701106"
        id="path12"
-       cx="130.8"
-       cy="205.2"
-       rx="248.39999"
-       ry="63.599998" />
+       cx="-17.999985"
+       cy="301.19998"
+       rx="397.19998"
+       ry="159.59999" />
     <ellipse
-       style="fill:#fbba5d;fill-opacity:0.545098;stroke-width:0.0349999"
+       style="fill:#fbba5d;fill-opacity:0.545098;stroke-width:0.0546722"
        id="path13"
-       cx="1239.6"
-       cy="93.600006"
-       rx="346.79999"
-       ry="96" />
-    <ellipse
-       style="fill:#fbba5d;fill-opacity:0.545098;stroke-width:0.0349999"
-       id="path11"
-       cx="1446"
-       cy="648"
-       rx="279.59998"
-       ry="98.400002" />
+       cx="1340.3999"
+       cy="489.59998"
+       rx="505.19998"
+       ry="160.8" />
   </g>
 </svg>
