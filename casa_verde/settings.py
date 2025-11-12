@@ -129,7 +129,7 @@ STATICFILES_DIRS = [
 #redireccion despues de iniciar secion y cerrar
 LOGIN_URL='login'
 LOGIN_REDIRECT_URL = 'home'
-LOGOUT_REDIRECT_URL = 'login'
+LOGOUT_REDIRECT_URL = 'usuarios'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
