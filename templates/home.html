@@ -64,9 +64,12 @@
     </div>
 
     <div class="contenedor-botones">
-        <a href="{% url 'logout' %}" class="boton-img">
-            <img src="{% static 'cerrarsesion.svg' %}" alt="Botón 1">
-        </a>
+        <form action="{% url 'logout' %}" method="post" style="display:inline;">
+    {% csrf_token %}
+    <button type="submit" style="background:none;border:none;padding:0;cursor:pointer;" class="boton-img">
+        <img src="{% static 'cerrarsesion.svg' %}" alt="Cerrar sesión">
+    </button>
+</form>
         <a href="{% url 'datos_terreno' %}"class="boton-img">
             <img src="{% static 'proyecto1.svg' %}" alt="Botón 2">
         </a>
