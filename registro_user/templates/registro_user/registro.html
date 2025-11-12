@@ -5,31 +5,33 @@
     <title>Registro</title>
     <style>
         body {
+            color:#e4fdc7;
             margin: 0;
             padding: 0;
-            background-image: url('{% static 'fondoatardecer.svg' %}');
+            background-image: url('{% static 'fondonoche.svg' %}');
             background-size: cover;       
             background-position: center;   
             background-repeat: no-repeat;}
 
-        
-        .logo_form {
-            width: 400px; 
-            margin: 0px;
-            position: absolute;
-            top: 60px;
-            left: 0px;}
-
         .login-container {
-            text-align: center
+            text-align: center}
     
-        }
+        .helptext {
+            display: none;
+            }
 
         .logo_form1 {
-            width: 300px;  
+            width: 320px;  
             height: auto;
             margin-bottom: 0px;
         }
+
+        .logo_form {
+            width: 400px; 
+            margin: 5px;
+            position: absolute;
+            top: 0px;
+            left: 0px;}
 
         form {
             display: flex;
@@ -37,23 +39,45 @@
             align-items: center;
         }
 
+        
+        .inicio {
+            color: #e4fdc7;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
     </style>
 </head>
 <body>
-    <img src="{% static 'logoatardecer1.svg' %}" alt="logo" class="logo_form">
     <div class="login-container">
         <h2>
             <img src="{% static 'registrarse.svg' %}" alt="registro" class="logo_form1">
         </h2>
-
+        <img src="{% static 'logonoche.svg' %}" alt="logo" class="logo_form">
         <form method="post">
+
             {% csrf_token %}
             {{ form.as_p }}
+
+            {% if form.errors %}
+                <div class="errorlist">
+                    {% for field in form %}
+                        {% for error in field.errors %}
+                            <p style="color: red;">{{ error }}</p>
+                        {% endfor %}
+                    {% endfor %}
+                    {% for error in form.non_field_errors %}
+                        <p style="color: red;">{{ error }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
             <button type="submit">Registrarme</button>
+
         </form>
 
         <p>¿Ya tienes cuenta? 
-            <a href="{% url 'login' %}">Inicia sesión</a>
+            <a href="{% url 'login' %}"class="inicio" >Inicia sesión</a>
         </p>
     </div>
 </body>
