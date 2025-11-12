@@ -1,0 +1,317 @@
+[
+    {
+        "model": "materiales.material",
+        "pk": 1,
+        "fields": {
+            "categoria": "estructura",
+            "nombre": "Cemento ecológico (bajo en clinker)",
+            "descripcion": "Versión más sostenible del cemento tradicional, genera hasta 40% menos CO₂; se usa igual que el cemento normal."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 2,
+        "fields": {
+            "categoria": "estructura",
+            "nombre": "Hormigón con áridos reciclados",
+            "descripcion": "Mezcla de cemento con escombros triturados o residuos industriales; reduce la extracción de áridos naturales."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 3,
+        "fields": {
+            "categoria": "estructura",
+            "nombre": "Bloques de suelo-cemento",
+            "descripcion": "Se fabrican con tierra local y poco cemento; no requieren cocción y ofrecen buena aislación térmica."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 4,
+        "fields": {
+            "categoria": "estructura",
+            "nombre": "Madera laminada (CLT o Glulam)",
+            "descripcion": "Paneles estructurales de madera encolada certificada FSC, muy resistente y con excelente comportamiento sísmico."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 5,
+        "fields": {
+            "categoria": "estructura",
+            "nombre": "Estructuras metálicas recicladas",
+            "descripcion": "Acero reciclado o reutilizado; mantiene su resistencia y reduce la huella de carbono del proceso de fundición."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 6,
+        "fields": {
+            "categoria": "aislacion",
+            "nombre": "Lana de oveja",
+            "descripcion": "Aislante natural chileno, renovable y biodegradable; regula la humedad y mantiene la temperatura interior."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 7,
+        "fields": {
+            "categoria": "aislacion",
+            "nombre": "Celulosa reciclada",
+            "descripcion": "Hecha a partir de papel reciclado tratado; se aplica por soplado, con gran rendimiento térmico y acústico."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 8,
+        "fields": {
+            "categoria": "aislacion",
+            "nombre": "Corcho natural",
+            "descripcion": "Aislante impermeable y resistente al fuego; proviene de la corteza del alcornoque sin dañar el árbol."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 9,
+        "fields": {
+            "categoria": "aislacion",
+            "nombre": "Fibra de cáñamo o lino",
+            "descripcion": "Aislantes vegetales con bajo impacto ambiental, resistentes a plagas y con buena transpirabilidad."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 10,
+        "fields": {
+            "categoria": "muros",
+            "nombre": "Paneles de yeso reciclado",
+            "descripcion": "Fabricados con yeso recuperado y papel reciclado; sustituyen al drywall convencional."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 11,
+        "fields": {
+            "categoria": "muros",
+            "nombre": "Revestimientos de tierra o arcilla natural",
+            "descripcion": "Estucos naturales sin químicos, permiten la respiración del muro y regulan la humedad."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 12,
+        "fields": {
+            "categoria": "muros",
+            "nombre": "Pinturas ecológicas sin COV",
+            "descripcion": "Elaboradas con pigmentos minerales y bases acuosas; no emiten gases tóxicos y mejoran la calidad del aire interior."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 13,
+        "fields": {
+            "categoria": "muros",
+            "nombre": "Tabiques de fibra vegetal prensada",
+            "descripcion": "Paneles hechos de paja, bambú o bagazo; ofrecen aislamiento y son 100% biodegradables."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 14,
+        "fields": {
+            "categoria": "cubiertas",
+            "nombre": "Tejas recicladas (plástico-madera o caucho)",
+            "descripcion": "Fabricadas a partir de residuos; livianas, resistentes y duraderas frente al ambiente costero."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 15,
+        "fields": {
+            "categoria": "cubiertas",
+            "nombre": "Cubiertas vegetales (techos verdes)",
+            "descripcion": "Sistemas de sustrato y vegetación que reducen el calor, filtran el aire y retienen aguas lluvias."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 16,
+        "fields": {
+            "categoria": "cubiertas",
+            "nombre": "Paneles de poliuretano vegetal",
+            "descripcion": "Aislantes de techo derivados de aceites vegetales, sustituyen espumas sintéticas."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 17,
+        "fields": {
+            "categoria": "maderas",
+            "nombre": "Madera certificada FSC",
+            "descripcion": "Proviene de bosques gestionados sustentablemente; puede usarse en estructura, pisos o revestimientos."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 18,
+        "fields": {
+            "categoria": "maderas",
+            "nombre": "Madera termotratada",
+            "descripcion": "Madera calentada sin químicos; resiste humedad y plagas, ideal para exteriores costeros."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 19,
+        "fields": {
+            "categoria": "maderas",
+            "nombre": "Aceites naturales (linaza, cera de abejas)",
+            "descripcion": "Sustituyen barnices sintéticos; nutren y protegen la madera de forma ecológica."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 20,
+        "fields": {
+            "categoria": "revestimientos",
+            "nombre": "Pisos de bambú",
+            "descripcion": "Material renovable de rápido crecimiento; muy resistente y estéticamente similar a la madera."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 21,
+        "fields": {
+            "categoria": "revestimientos",
+            "nombre": "Linóleo natural",
+            "descripcion": "Fabricado con aceite de linaza, resinas y yute; biodegradable y antibacteriano."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 22,
+        "fields": {
+            "categoria": "revestimientos",
+            "nombre": "Cerámicos reciclados",
+            "descripcion": "Piezas hechas con material recuperado de otros procesos; duraderos y con menor energía de fabricación."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 23,
+        "fields": {
+            "categoria": "instalaciones",
+            "nombre": "Grifería de bajo consumo y aireadores",
+            "descripcion": "Reducen el gasto de agua sin afectar la presión; fácil instalación en cualquier red."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 24,
+        "fields": {
+            "categoria": "instalaciones",
+            "nombre": "Sistemas de captación de aguas lluvias",
+            "descripcion": "Almacenan agua para riego o limpieza, disminuyendo la demanda de agua potable."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 25,
+        "fields": {
+            "categoria": "instalaciones",
+            "nombre": "Paneles solares fotovoltaicos",
+            "descripcion": "Generan energía eléctrica limpia; ideales para aprovechar el buen nivel de radiación solar de la zona."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 26,
+        "fields": {
+            "categoria": "instalaciones",
+            "nombre": "Cables eléctricos libres de halógenos",
+            "descripcion": "No emiten gases tóxicos en caso de incendio, y son reciclables."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 27,
+        "fields": {
+            "categoria": "naturales",
+            "nombre": "Adobe reforzado",
+            "descripcion": "Bloques de tierra y fibra natural secados al sol; excelente inercia térmica, bajo impacto ambiental."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 28,
+        "fields": {
+            "categoria": "naturales",
+            "nombre": "Hormigón de cáñamo (hempcrete)",
+            "descripcion": "Mezcla de fibras de cáñamo y cal; ligero, transpirable y buen aislante térmico."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 29,
+        "fields": {
+            "categoria": "naturales",
+            "nombre": "Paneles SIP ecológicos",
+            "descripcion": "Paneles prefabricados con núcleo de corcho o espuma vegetal, reducen el consumo energético."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 30,
+        "fields": {
+            "categoria": "ventanas",
+            "nombre": "Ventanas de PVC reciclado o aluminio reciclado",
+            "descripcion": "Mantienen eficiencia térmica y son 100% reciclables al final de su vida útil."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 31,
+        "fields": {
+            "categoria": "ventanas",
+            "nombre": "Vidrios Low-E (bajo emisivo)",
+            "descripcion": "Reducen la ganancia o pérdida de calor, mejorando la eficiencia energética de la vivienda."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 32,
+        "fields": {
+            "categoria": "ventanas",
+            "nombre": "Burletes de silicona natural o reciclable",
+            "descripcion": "Sellan puertas y ventanas, evitando filtraciones de aire y humedad."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 33,
+        "fields": {
+            "categoria": "sistemas",
+            "nombre": "Pinturas reflectantes (cool roof)",
+            "descripcion": "Reducen la temperatura del techo y la demanda de climatización."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 34,
+        "fields": {
+            "categoria": "sistemas",
+            "nombre": "Paneles solares térmicos",
+            "descripcion": "Calientan agua mediante energía solar; ideales para viviendas familiares."
+        }
+    },
+    {
+        "model": "materiales.material",
+        "pk": 35,
+        "fields": {
+            "categoria": "sistemas",
+            "nombre": "Biodigestores domésticos",
+            "descripcion": "Tratan aguas negras y generan biogás, una alternativa ecológica para zonas rurales o semiurbanas."
+        }
+    }
+]

@@ -16,3 +16,27 @@ class ProvinciaDatos(models.Model):
     def __str__(self):
         return f"{self.user.username} - {self.provincia}"
 
+class Material(models.Model):
+    CATEGORIAS = [
+        ('estructura', 'Estructura y obra gruesa'),
+        ('aislacion', 'Aislamiento térmico y acústico'),
+        ('muros', 'Muros y tabiquería'),
+        ('cubiertas', 'Cubiertas y techos'),
+        ('maderas', 'Maderas y acabados'),
+        ('revestimientos', 'Revestimientos y pisos'),
+        ('instalaciones', 'Instalaciones y eficiencia energética'),
+        ('naturales', 'Muros y soluciones naturales'),
+        ('ventanas', 'Ventanas y carpinterías'),
+        ('sistemas', 'Sistemas complementarios'),
+    ]
+
+    categoria = models.CharField(
+        max_length=50,
+        choices=CATEGORIAS,
+        verbose_name="Categoría"
+    )
+    nombre = models.CharField(max_length=100)
+    descripcion = models.TextField(blank=True)
+
+    def __str__(self):
+        return f"{self.nombre} ({self.get_categoria_display()})"
