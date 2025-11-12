@@ -1,8 +1,9 @@
 import requests
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from .models import ProvinciaDatos
+from .models import ProvinciaDatos, Material
 from .forms import ProvinciaForm, PROVINCIAS_VALPARAISO
+from collections import defaultdict
 
 @login_required
 def elegir_provincia(request):
@@ -54,3 +55,14 @@ def datos_terreno(request):
 
     return render(request, "materiales/datos_terreno.html", {"registro": registro})
 
+def lista_materiales(request):
+    materiales = Material.objects.all().order_by('categoria', 'nombre')
+    
+    categorias = {}
+    for material in materiales:
+        key = material.get_categoria_display()  
+        if key not in categorias:
+            categorias[key] = []
+        categorias[key].append(material)
+    
+    return render(request, 'materiales/lista_materiales.html', {'categorias': categorias})
