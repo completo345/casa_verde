@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
-   sodipodi:docname="cerrarsesion.svg"
+   sodipodi:docname="materiales1.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      inkscape:zoom="14.111111"
-     inkscape:cx="27.425197"
+     inkscape:cx="27.389764"
      inkscape:cy="11.65748"
      inkscape:window-width="1366"
      inkscape:window-height="697"
@@ -44,7 +44,8 @@
        x="0.63431811"
        y="2.4620745"
        id="text2"
-       transform="scale(0.90363459,1.106642)"><tspan
+       transform="scale(0.90363459,1.106642)"
+       sodipodi:insensitive="true"><tspan
          sodipodi:role="line"
          id="tspan2"
          style="fill:#bee6c0;fill-opacity:1;stroke-width:0.0233609"
@@ -78,7 +79,8 @@
        x="0.71731621"
        y="2.4451315"
        id="text1"
-       transform="scale(0.90363459,1.106642)"><tspan
+       transform="scale(0.90363459,1.106642)"
+       sodipodi:insensitive="true"><tspan
          sodipodi:role="line"
          id="tspan1"
          style="fill:#389b3c;fill-opacity:1;stroke-width:0.0233609"

@@ -1,7 +1,61 @@
-<h2>Seleccionar Provincia</h2>
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Seleccionar provincia</title>
 
-<form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Guardar y obtener clima</button>
-</form>
+    <style>
+
+        body {
+            color:#263f23;
+            background-color: rgb(181, 252, 175);
+        }
+        .logo {
+            width: 400px; 
+            display: block;
+            margin: 30px auto;}
+
+        .caja {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .provincia {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .provincia input,
+        .provincia select,
+        .provincia textarea {
+            font-size: 20px;
+            padding: 5px;
+            width: 200px;  
+        }       
+
+        .provincia button {
+            font-size: 15px;
+            padding: 5px 15px;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+
+    <img src="{% static 'provincia.svg' %}" alt="logo" class="logo">
+
+    <div class="caja">
+        <form method="POST" class="provincia">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Guardar y obtener clima</button>
+        </form>
+    </div>
+
+
+</body>

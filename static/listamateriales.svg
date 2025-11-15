@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="70"
+   height="20"
+   viewBox="0 0 18.520826 5.2916688"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="listamateriales.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="9.9780623"
+     inkscape:cx="30.917826"
+     inkscape:cy="17.688805"
+     inkscape:window-width="1366"
+     inkscape:window-height="697"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:3.15323px;line-height:0.8;font-family:forte;-inkscape-font-specification:'forte, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#389b3c;stroke-width:0.0390587;fill-opacity:1"
+       x="2.4622378"
+       y="2.3796136"
+       id="text1"
+       transform="scale(0.99853127,1.0014709)"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="line-height:0.8;stroke-width:0.0390588;fill:#389b3c;fill-opacity:1"
+         x="2.4622378"
+         y="2.3796136">  lista de </tspan><tspan
+         sodipodi:role="line"
+         style="line-height:0.8;stroke-width:0.0390588;fill:#389b3c;fill-opacity:1"
+         x="2.4622378"
+         y="4.9021978"
+         id="tspan2">materiales</tspan></text>
+    <path
+       style="fill:#389b3c;fill-opacity:1;stroke-width:0.0127202"
+       d="m 9.984808,2.9151286 c -2.85e-4,-0.061503 0.01119,-0.4973595 0.491831,-0.4259326 0.480635,0.071425 1.009042,0.23175 1.009042,0.23175 L 10.94027,3.2605351 c 0,0 -0.592748,0.5429421 -0.955458,-0.3454046 z"
+       id="path35"
+       inkscape:transform-center-x="0.57860048"
+       inkscape:transform-center-y="0.01946969" />
+    <path
+       style="fill:#389b3c;fill-opacity:1;stroke-width:0.0116966"
+       d="M 9.724083,3.1358941 9.7900845,3.2828635 10.344663,3.1320264 10.30243,3.0033317 Z"
+       id="path36"
+       inkscape:transform-center-x="1.3996582"
+       inkscape:transform-center-y="0.087455573" />
+  </g>
+</svg>
