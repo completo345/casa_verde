@@ -40,9 +40,106 @@
             padding: 5px 15px;
         }
 
+                /* ---- Reglas Select2 unificadas para el formulario de provincia ---- */
+                /* Etiqueta del campo 'material' (ajusta si el id es diferente) */
+                form.provincia label[for="id_material"] {
+                        font-size: 14px;
+                        font-weight: 600;
+                }
+
+                /* Texto dentro del control (cuando hay selección renderizada) */
+                form.provincia .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+                        font-size: 13px;
+                        line-height: 1.2;
+                }
+
+                /* Chips seleccionadas */
+                form.provincia .select2-container--default .select2-selection--multiple .select2-selection__choice {
+                        font-size: 11px;
+                        padding: 0 6px;
+                }
+
+                /* Placeholder / texto de ejemplo antes de seleccionar */
+                form.provincia .select2-container--default .select2-selection--multiple .select2-selection__placeholder,
+                form.provincia .select2-container--default .select2-selection--single .select2-selection__rendered {
+                        font-size: 10px !important;
+                        color: #555;
+                        line-height: 1.1;
+                        opacity: 0.95;
+                }
+
+                /* Opciones del dropdown */
+                form.provincia .select2-container .select2-results__option {
+                        font-size: 12px;
+                        line-height: 1.3;
+                }
+
+                /* Campo de búsqueda interno */
+                form.provincia .select2-container--default .select2-search--inline .select2-search__field {
+                        font-size: 12px;
+                }
+
+                /* Ancho del control */
+                form.provincia .select2-container {
+                        width: 360px !important;
+                }
+
+                /* Resultado seleccionado resaltado */
+                form.provincia .select2-container .select2-results__option[aria-selected="true"] {
+                        font-size: 12px;
+                }
+
+                /* Botones de acción: estilos compartidos para igualar tamaño */
+                .action-btn {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 8px 12px;
+                    border-radius: 8px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    min-height: 36px;
+                    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+                    box-sizing: border-box;
+                }
+                .btn-regresar {
+                    background: #fff;
+                    border: 1px solid #2c5a2a;
+                    color: #2c5a2a;
+                }
+                /* Alineación de acciones del formulario (submit + regresar) en línea */
+                form.provincia .form-actions {
+                    display: flex;
+                    gap: 12px;
+                    align-items: center;
+                    margin-top: 8px;
+                    justify-content: flex-start;
+                }
+                form.provincia .btn-submit,
+                form.provincia button[type="submit"] {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0;
+                    background: #2c5a2a;
+                    color: #fff;
+                    border: 1px solid #2c5a2a;
+                    cursor: pointer;
+                }
+
+                /* Specific override to ensure both elements have identical padding/height/font */
+                form.provincia .form-actions .action-btn {
+                    padding: 8px 12px !important;
+                    min-height: 36px !important;
+                    font-size: 15px !important;
+                    line-height: 1 !important;
+                    box-sizing: border-box !important;
+                }
         
 
     </style>
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -53,9 +150,44 @@
         <form method="POST" class="provincia">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit">Guardar y obtener clima</button>
+            <div id="material-error" style="color:#b00020;display:none;margin-top:6px;font-weight:600;"></div>
+            <div class="form-actions">
+                <a href="{% url 'home' %}" class="boton-regresar btn-regresar action-btn" aria-label="Regresar al inicio">Regresar al inicio</a>
+                <button type="submit" class="btn-submit action-btn">Guardar y obtener clima</button>
+            </div>
         </form>
     </div>
 
+    <!-- jQuery + Select2 JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        (function($){
+            $(document).ready(function(){
+                // Inicializa Select2 en el select múltiple de materiales
+                $('.materials-select').select2({
+                    placeholder: 'Selecciona materiales',
+                    width: '360px',
+                    allowClear: true
+                });
+
+                // Validación client-side: impedir submit si no hay materiales seleccionados
+                $('form.provincia').on('submit', function(e){
+                    var vals = $('.materials-select').val();
+                    if (!vals || vals.length === 0) {
+                        e.preventDefault();
+                        // mostrar mensaje de error
+                        $('#material-error').text('Por favor seleccionar al menos un material').show();
+                        // abrir/select2 focus para ayudar al usuario
+                        $('.materials-select').select2('open');
+                        return false;
+                    }
+                    // si hay mensaje previo, ocultarlo
+                    $('#material-error').hide();
+                });
+            });
+        })(jQuery);
+    </script>
 
 </body>
+</html>

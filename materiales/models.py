@@ -13,6 +13,9 @@ class ProvinciaDatos(models.Model):
 
     fecha_actualizacion = models.DateTimeField(auto_now=True)
 
+    # Materiales seleccionados por el usuario para esta provincia (ManyToMany)
+    materials = models.ManyToManyField('Material', blank=True, related_name='provincia_datos')
+
     def __str__(self):
         return f"{self.user.username} - {self.provincia}"
 

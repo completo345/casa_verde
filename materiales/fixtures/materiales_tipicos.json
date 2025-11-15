@@ -1,0 +1,314 @@
+[
+  {
+    "model": "materiales.material",
+    "pk": 1,
+    "fields": {
+      "categoria": "estructura",
+      "nombre": "Hormigón armado",
+      "descripcion": "Mezcla de cemento, áridos y agua con armadura de acero; usado en cimientos, pilares y losas.",
+      "relevancia_temperatura": 1,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 2
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 2,
+    "fields": {
+      "categoria": "estructura",
+      "nombre": "Acero estructural",
+      "descripcion": "Perfiles y vigas para grandes luces y resistencia a tracción; usado en estructuras metálicas.",
+      "relevancia_temperatura": 1,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 3
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 3,
+    "fields": {
+      "categoria": "muros",
+      "nombre": "Bloque de hormigón",
+      "descripcion": "Unidades prefabricadas para muros portantes y de cerramiento; económico y resistente.",
+      "relevancia_temperatura": 1,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 2
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 4,
+    "fields": {
+      "categoria": "muros",
+      "nombre": "Ladrillo cerámico",
+      "descripcion": "Ladrillo cocido para muros portantes y tabiques; buena durabilidad y acabado.",
+      "relevancia_temperatura": 1,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 1
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 5,
+    "fields": {
+      "categoria": "maderas",
+      "nombre": "Madera laminada",
+      "descripcion": "Vigas y elementos estructurales laminados; estable y de altas prestaciones mecánicas.",
+      "relevancia_temperatura": 1,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 2
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 6,
+    "fields": {
+      "categoria": "maderas",
+      "nombre": "Madera maciza",
+      "descripcion": "Tablas y carpintería para suelos y acabados; aporta apariencia cálida y natural.",
+      "relevancia_temperatura": 1,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 0
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 7,
+    "fields": {
+      "categoria": "muros",
+      "nombre": "Placa de yeso (Drywall)",
+      "descripcion": "Sistemas de tabiquería seca para divisiones interiores; ligero y de rápida instalación.",
+      "relevancia_temperatura": 0,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 0
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 8,
+    "fields": {
+      "categoria": "aislacion",
+      "nombre": "Lana de roca / lana de vidrio",
+      "descripcion": "Aislamiento térmico y acústico para paredes, cubiertas y conductos; incombustible.",
+      "relevancia_temperatura": 3,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 0
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 9,
+    "fields": {
+      "categoria": "aislacion",
+      "nombre": "Poliestireno expandido (EPS)",
+      "descripcion": "Aislamiento térmico ligero para fachadas, suelos y cubiertas; económico.",
+      "relevancia_temperatura": 3,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 0
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 10,
+    "fields": {
+      "categoria": "aislacion",
+      "nombre": "Panel de poliuretano (PUR/PIR)",
+      "descripcion": "Alta resistencia térmica por espesor; usado en paneles sándwich y cubiertas.",
+      "relevancia_temperatura": 3,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 0
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 11,
+    "fields": {
+      "categoria": "aislacion",
+      "nombre": "Corcho natural",
+      "descripcion": "Aislamiento sostenible con buena inercia térmica y propiedades acústicas.",
+      "relevancia_temperatura": 2,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 0
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 12,
+    "fields": {
+      "categoria": "cubiertas",
+      "nombre": "Teja cerámica",
+      "descripcion": "Elemento tradicional para cubiertas inclinadas; estética y durabilidad.",
+      "relevancia_temperatura": 1,
+      "relevancia_radiacion": 1,
+      "relevancia_viento": 1
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 13,
+    "fields": {
+      "categoria": "cubiertas",
+      "nombre": "Lámina metálica (acero/aluminio)",
+      "descripcion": "Cubiertas ligeras para naves y edificaciones; rápida instalación.",
+      "relevancia_temperatura": 1,
+      "relevancia_radiacion": 1,
+      "relevancia_viento": 3
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 14,
+    "fields": {
+      "categoria": "cubiertas",
+      "nombre": "Membrana impermeabilizante (EPDM/PVC/Asfáltica)",
+      "descripcion": "Protege cubiertas planas y cimentaciones de la entrada de agua.",
+      "relevancia_temperatura": 0,
+      "relevancia_radiacion": 1,
+      "relevancia_viento": 1
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 15,
+    "fields": {
+      "categoria": "cubiertas",
+      "nombre": "Panel sándwich (metal + aislamiento)",
+      "descripcion": "Panel prefabricado para cubiertas y fachadas con aislamiento integrado.",
+      "relevancia_temperatura": 3,
+      "relevancia_radiacion": 1,
+      "relevancia_viento": 2
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 16,
+    "fields": {
+      "categoria": "ventanas",
+      "nombre": "Acristalamiento doble/triple (Bajo emisivo + gas)",
+      "descripcion": "Mejora el comportamiento térmico y acústico de ventanas; reduce transmisiones.",
+      "relevancia_temperatura": 3,
+      "relevancia_radiacion": 2,
+      "relevancia_viento": 0
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 17,
+    "fields": {
+      "categoria": "ventanas",
+      "nombre": "Perfiles de aluminio con rotura de puente térmico",
+      "descripcion": "Carpintería resistente y de menor transmitancia térmica que el aluminio estándar.",
+      "relevancia_temperatura": 2,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 2
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 18,
+    "fields": {
+      "categoria": "instalaciones",
+      "nombre": "Paneles fotovoltaicos",
+      "descripcion": "Generación eléctrica a partir de radiación solar; clave en eficiencia energética.",
+      "relevancia_temperatura": 0,
+      "relevancia_radiacion": 3,
+      "relevancia_viento": 0
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 19,
+    "fields": {
+      "categoria": "instalaciones",
+      "nombre": "Bomba de calor",
+      "descripcion": "Sistema de calefacción/refrigeración eficiente comparado con combustibles fósiles.",
+      "relevancia_temperatura": 3,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 0
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 20,
+    "fields": {
+      "categoria": "instalaciones",
+      "nombre": "Tubería PEX / PVC",
+      "descripcion": "Tuberías plásticas para agua y saneamiento; resistentes a la corrosión.",
+      "relevancia_temperatura": 0,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 0
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 21,
+    "fields": {
+      "categoria": "revestimientos",
+      "nombre": "Microcemento / Hormigón pulido",
+      "descripcion": "Acabado continuo para suelos y paredes, aspecto moderno y resistente.",
+      "relevancia_temperatura": 0,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 0
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 22,
+    "fields": {
+      "categoria": "revestimientos",
+      "nombre": "Baldosa cerámica",
+      "descripcion": "Pavimento y revestimiento duradero y fácil de mantener.",
+      "relevancia_temperatura": 0,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 0
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 23,
+    "fields": {
+      "categoria": "revestimientos",
+      "nombre": "Piedra natural / Terrazo",
+      "descripcion": "Acabados de alto rendimiento y estética; aptos para interiores y exteriores.",
+      "relevancia_temperatura": 1,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 0
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 24,
+    "fields": {
+      "categoria": "naturales",
+      "nombre": "Hempcrete (cáñamo + cal)",
+      "descripcion": "Material natural y transpirable con buen aislamiento y baja huella de carbono.",
+      "relevancia_temperatura": 2,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 0
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 25,
+    "fields": {
+      "categoria": "naturales",
+      "nombre": "Adobe / Tierra apisonada",
+      "descripcion": "Muros de tierra con buen comportamiento higrotérmico y baja energía incorporada.",
+      "relevancia_temperatura": 2,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 0
+    }
+  },
+  {
+    "model": "materiales.material",
+    "pk": 26,
+    "fields": {
+      "categoria": "sistemas",
+      "nombre": "Elementos prefabricados",
+      "descripcion": "Paneles, vigas y módulos industriales para montaje rápido y controlado.",
+      "relevancia_temperatura": 1,
+      "relevancia_radiacion": 0,
+      "relevancia_viento": 2
+    }
+  }
+]

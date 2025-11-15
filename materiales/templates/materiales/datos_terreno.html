@@ -1,5 +1,9 @@
 <h2>Datos Climáticos Guardados</h2>
 
+<div style="margin-bottom:12px;">
+	<a href="{% url 'home' %}" style="display:inline-block;background:#2c5a2a;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;font-weight:600;">Volver al Inicio</a>
+</div>
+
 {% if registro %}
 <p><strong>Provincia:</strong> {{ registro.provincia }}</p>
 <p><strong>Latitud:</strong> {{ registro.lat }}</p>
@@ -10,6 +14,36 @@
 <p><em>Última actualización: {{ registro.fecha_actualizacion }}</em></p>
 
 <a href="{% url 'elegir_provincia' %}">Cambiar Provincia</a>
+
+{% if analysis and analysis.seleccionados %}
+	<hr>
+	<h3>Materiales seleccionados</h3>
+	<ul>
+	{% for m in analysis.seleccionados %}
+		<li><strong>{{ m.nombre }}</strong> — {{ m.get_categoria_display }}</li>
+	{% endfor %}
+	</ul>
+
+	<h3>Recomendaciones ecológicas alternativas</h3>
+	<p>Basado en las condiciones climáticas de tu provincia y los materiales que planeabas usar, sugerimos alternativas más ecológicas (si las hay):</p>
+	<div>
+	{% for item in analysis.recommendations %}
+		<div style="margin-bottom:12px;padding:8px;border:1px dashed #ccc;">
+			<strong>Para:</strong> {{ item.selected.nombre }} ({{ item.selected.get_categoria_display }})<br/>
+			<strong>Alternativas recomendadas:</strong>
+			{% if item.alternatives %}
+				<ul>
+				{% for alt in item.alternatives %}
+					<li><strong>{{ alt.nombre }}</strong> — {{ alt.descripcion }} (Categoría: {{ alt.get_categoria_display }})</li>
+				{% endfor %}
+				</ul>
+			{% else %}
+				<em>No se encontraron alternativas naturales similares.</em>
+			{% endif %}
+		</div>
+	{% endfor %}
+	</div>
+{% endif %}
 
 {% else %}
 <p>No has ingresado datos aún.</p>
