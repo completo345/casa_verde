@@ -9,7 +9,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url('{% static 'fondo.svg' %}');
+            background-image: url("{% static 'fondo.svg' %}");
             background-size: cover;       
             background-position: center;   
             background-repeat: no-repeat;}
@@ -18,7 +18,7 @@
             background-color: rgba(255, 255, 255, 0.8);
             color: #2c5a2a; 
             padding: 25px; 
-            border: 2px #ccc; 
+            border: 2px solid #ccc;
             border-radius: 150px; 
             width: 300px; 
             margin: 20px auto; 
@@ -70,7 +70,7 @@
         <img src="{% static 'cerrarsesion.svg' %}" alt="Cerrar sesión">
     </button>
 </form>
-        <a href="{% url 'datos_terreno' %}"class="boton-img">
+        <a href="{% url 'datos_terreno' %}" class="boton-img">
             <img src="{% static 'proyecto1.svg' %}" alt="Botón 2">
         </a>
         <a href="/materiales/" class="boton-img">
