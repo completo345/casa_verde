@@ -77,7 +77,8 @@ def datos_terreno(request):
         # Preparar recomendaciones: para cada material seleccionado, buscar alternativas "naturales"
         recommendations = []
         if seleccionados:
-            candidatos = list(Material.objects.filter(categoria='naturales'))
+            # usar todos los materiales como candidatos (no solo la categoría 'naturales')
+            candidatos = list(Material.objects.all())
             for sel in seleccionados:
                 # vector de relevancias del material seleccionado
                 sv = (sel.relevancia_temperatura, sel.relevancia_radiacion, sel.relevancia_viento)
