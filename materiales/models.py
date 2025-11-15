@@ -37,6 +37,23 @@ class Material(models.Model):
     )
     nombre = models.CharField(max_length=100)
     descripcion = models.TextField(blank=True)
+    relevancia_temperatura = models.PositiveSmallIntegerField(
+        default=0,
+        verbose_name="Relevancia para Temperatura",
+        help_text="Relevancia del material frente a temperaturas (0=nula, 3=alta)."
+    )
+    relevancia_radiacion = models.PositiveSmallIntegerField(
+        default=0,
+        verbose_name="Relevancia para Radiación Solar",
+        help_text="Relevancia del material frente a radiación (0=nula, 3=alta)."
+    )
+    relevancia_viento = models.PositiveSmallIntegerField(
+        default=0,
+        verbose_name="Relevancia para Viento",
+        help_text="Relevancia del material frente al viento (0=nula, 3=alta)."
+    )
 
     def __str__(self):
         return f"{self.nombre} ({self.get_categoria_display()})"
+
+    
