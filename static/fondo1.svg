@@ -7,7 +7,7 @@
    viewBox="0 0 1587.5 1322.9166"
    version="1.1"
    id="svg1"
-   sodipodi:docname="fondo.svg"
+   sodipodi:docname="fondo1.svg"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -36,21 +36,21 @@
   <g
      id="layer1">
     <rect
-       style="display:inline;fill:#8ae6de;fill-opacity:1;stroke-width:0.585233"
+       style="display:inline;fill:#98e3df;fill-opacity:1;stroke-width:0.585233"
        id="rect2"
        width="1661.2668"
        height="1726.4534"
        x="-28.447058"
        y="-191.9613" />
     <ellipse
-       style="fill:#f5f75b;fill-opacity:1;stroke-width:0.40156"
+       style="fill:#f7ec5b;fill-opacity:1;stroke-width:0.40156"
        id="path5"
        cx="795.55658"
        cy="738.1203"
        rx="223.70486"
        ry="223.98293" />
     <ellipse
-       style="fill:#6ee456;fill-opacity:1;stroke-width:0.814753"
+       style="fill:#93ea61;fill-opacity:1;stroke-width:0.814753"
        id="path2"
        cx="840.00806"
        cy="1355.6287"

@@ -2,30 +2,30 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="107"
-   height="17"
-   viewBox="0 0 28.310397 4.4979186"
+   width="48"
+   height="12"
+   viewBox="0 0 12.7 3.1750014"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
-   sodipodi:docname="mselec.svg"
+   sodipodi:docname="registrarse1.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
      id="namedview1"
-     pagecolor="#ffffff"
+     pagecolor="#ffba1b"
      bordercolor="#000000"
-     borderopacity="0.25"
+     borderopacity="0"
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
-     inkscape:zoom="7.0555555"
-     inkscape:cx="50.102363"
-     inkscape:cy="9.4251969"
+     inkscape:zoom="9.9780623"
+     inkscape:cx="33.323103"
+     inkscape:cy="15.684408"
      inkscape:window-width="1366"
      inkscape:window-height="697"
      inkscape:window-x="-8"
@@ -34,28 +34,21 @@
      inkscape:current-layer="svg1" />
   <defs
      id="defs1" />
-  <rect
-     style="fill:#c5f3aa;stroke-width:0.0349999"
-     id="rect1"
-     width="29.13751"
-     height="7.087503"
-     x="-0.56251615"
-     y="-1.8375008" />
   <g
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1">
     <text
        xml:space="preserve"
-       style="font-size:2.55841px;line-height:0.8;font-family:forte;-inkscape-font-specification:'forte, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#389b3c;stroke-width:0.0338435"
-       x="0.66336441"
-       y="2.7558322"
+       style="font-size:2.79841px;line-height:1.4;font-family:forte;-inkscape-font-specification:forte;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#eeee69;fill-opacity:1;stroke-width:0.0231364"
+       x="0.79967541"
+       y="1.9695237"
        id="text1"
-       transform="scale(0.96695874,1.0341703)"><tspan
+       transform="scale(0.91240252,1.0960075)"><tspan
          sodipodi:role="line"
-         style="stroke-width:0.0338436"
-         x="0.66336441"
-         y="2.7558322"
-         id="tspan2">materiales seleccionados</tspan></text>
+         id="tspan1"
+         style="fill:#eeee69;fill-opacity:1;stroke-width:0.0231364"
+         x="0.79967541"
+         y="1.9695237">registrarse</tspan></text>
   </g>
 </svg>
