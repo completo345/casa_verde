@@ -8,7 +8,7 @@
 
         body {
             color:#254422;
-            background-color: rgb(181, 252, 175);
+            background-color: rgb(202, 253, 198);
         }
 		.datos {
     		width: 400px;
@@ -18,7 +18,8 @@
 
 		.mselec {
     		width: 400px;
-    		margin: 5px auto;}
+    		margin: 5px auto;
+			display: block;}
 
 		.recom{
     		width: 400px;
@@ -71,6 +72,26 @@
     		margin-bottom: 15px;              
 		}
 
+		hr.separador {
+    		border: 0;
+    		height: 1px;
+    		background: #2a4224; 
+    		margin: 10px 0;  
+		}
+		.materialselec {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+		}	
+
+.recomendacion {
+    font-family: "Arial", sans-serif; 
+    font-size: 21px; 
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 5px dashed #2a4224;
+}
+
+
 	</style>
 </head>
 <body>
@@ -100,36 +121,41 @@
 
 
 {% if analysis and analysis.seleccionados %}
-	<hr>
+	<hr class="separador">
 	<img src="{% static 'mselec.svg' %}" alt="logo" class="mselec">
-	<ul>
-	{% for m in analysis.seleccionados %}
-		<li><strong>{{ m.nombre }}</strong> — {{ m.get_categoria_display }}</li>
-	{% endfor %}
-	</ul>
+<ul>
+{% for m in analysis.seleccionados %}
+    <li class="materialselec">
+        <span class="nombre">{{ m.nombre }}</span> — 
+        <span class="categoria">{{ m.get_categoria_display }}</span>
+    </li>
+{% endfor %}
+</ul>
 
+	<hr class="separador">
 	<img src="{% static 'recomendados.svg' %}" alt="logo" class="recom">
 	<p class="texto">
     Basado en las condiciones climáticas de tu provincia y los materiales que planeabas usar, sugerimos alternativas más ecológicas (si las hay):
 	</p>
 
-	<div>
-	{% for item in analysis.recommendations %}
-		<div style="margin-bottom:12px;padding:8px;border:1px dashed #ccc;">
-			<strong>Para:</strong> {{ item.selected.nombre }} ({{ item.selected.get_categoria_display }})<br/>
-			<strong>Alternativas recomendadas:</strong>
-			{% if item.alternatives %}
-				<ul>
-				{% for alt in item.alternatives %}
-					<li><strong>{{ alt.nombre }}</strong> — {{ alt.descripcion }} (Categoría: {{ alt.get_categoria_display }})</li>
-				{% endfor %}
-				</ul>
-			{% else %}
-				<em>No se encontraron alternativas naturales similares.</em>
-			{% endif %}
-		</div>
-	{% endfor %}
-	</div>
+<div>
+{% for item in analysis.recommendations %}
+    <div class="recomendacion">
+        <strong>Para:</strong> {{ item.selected.nombre }} ({{ item.selected.get_categoria_display }})<br/>
+        <strong>Alternativas recomendadas:</strong>
+        {% if item.alternatives %}
+            <ul>
+            {% for alt in item.alternatives %}
+                <li><strong>{{ alt.nombre }}</strong> — {{ alt.descripcion }} (Categoría: {{ alt.get_categoria_display }})</li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <em>No se encontraron alternativas naturales similares.</em>
+        {% endif %}
+    </div>
+{% endfor %}
+</div>
+
 {% endif %}
 
 {% else %}
