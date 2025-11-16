@@ -7,9 +7,14 @@
 	<style>
 
         body {
-            color:#254422;
-            background-color: rgb(202, 253, 198);
-        }
+    		background:
+						url("{% static 'flor2.svg' %}") left no-repeat,
+                		url("{% static 'flor1.svg' %}") right no-repeat,
+                		url("{% static 'flor.svg' %}") center no-repeat;
+    		background-size: 100px, 100px, 100px;
+    		background-color: #f0fff4;            
+		}
+
 		.datos {
     		width: 400px;
     		margin: 5px auto;
@@ -81,13 +86,13 @@
     		border: 0;
     		height: 7px;
     		border-radius: 8px;
-    		background: linear-gradient(
-        		90deg,
-        		#6b4f3f,
-        		#8b5e3c,
-        		#6b4f3f
+    		background: repeating-linear-gradient(
+        	45deg,
+        		#2a692c,
+       			#2a692c 5px,
+        		#3f8a41 5px,
+        		#3f8a41 10px
     		);
-    		box-shadow: inset 0 0 5px #4a3728;
     		margin: 25px 0;
 		}
 
