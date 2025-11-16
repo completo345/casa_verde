@@ -21,10 +21,30 @@
         th, td { border: 1px solid #2b6329c4; padding: 8px; text-align: left; }
         th { background-color: #6ab867; }
         tr:nth-child(even) { background-color: #8ecf8c; }
+
+    		.volver { 
+    		top: 12px;
+    		left: 2px;
+    		display: inline-block;
+    		cursor: pointer;
+    		z-index: 1000;
+		}
+
+		.volver img {
+   			width: 200px;            
+    		transition: transform 0.1s ease, opacity 0.1s ease;
+		}
+			
+		.volver:hover img {
+            transform: scale(1.1); }
+
     </style>
 </head>
 <body>
 
+    <a href="{% url 'home' %}" class="volver">
+        <img src="{% static 'volver.svg' %}" >
+    </a>
     <img src="{% static 'listamateriales.svg' %}" alt="logo" class="logo_form">
 
     {% for categoria, materiales in categorias.items %}
