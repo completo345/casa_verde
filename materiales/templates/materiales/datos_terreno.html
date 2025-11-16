@@ -1,10 +1,90 @@
-<h2>Datos Climáticos Guardados</h2>
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recomendación materiales</title>
 
-<div style="margin-bottom:12px;">
-	<a href="{% url 'home' %}" style="display:inline-block;background:#2c5a2a;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;font-weight:600;">Volver al Inicio</a>
+	<style>
+
+        body {
+            color:#254422;
+            background-color: rgb(181, 252, 175);
+        }
+		.datos {
+    		width: 400px;
+    		margin: 5px auto;
+    		display: block;
+		}
+
+		.mselec {
+    		width: 400px;
+    		margin: 5px auto;}
+
+		.recom{
+    		width: 400px;
+    		margin: 5px auto;
+    		display: block;}
+
+		.volver {
+    		display: inline-block;
+    		padding: 8px 14px;
+    		border: 1px solid #14331c;
+    		border-radius: 40px;
+    		margin: 15px 0;
+			background-color: #389b3cff;
+		}
+
+		.volver a {
+   			text-decoration: none;
+    		color: #eaf7e7;
+			font-family: Arial, Helvetica, sans-serif;
+    		font-weight: bold;
+		}
+
+		.provincia1 {
+    		display: inline-block;
+    		padding: 8px 14px;
+    		border: 1px solid #14331c;
+    		border-radius: 40px;
+    		margin: 15px 0;
+			background-color: #389b3cff;
+		}
+
+		.provincia1 a {
+   			text-decoration: none;
+    		color: #eaf7e7;
+			font-family: Arial, Helvetica, sans-serif;
+    		font-weight: bold;
+		}
+
+		.datitos {
+    		font-size: 18px;      
+    		line-height: 1;           
+    		margin-bottom: 2px;
+			font-family: Arial, Helvetica, sans-serif; 
+		}
+
+		.texto {
+    		font-family: 'Arial', sans-serif; 
+    		font-size: 20px;                   
+    		color: #254422;                    
+    		margin-bottom: 15px;              
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="volver">
+    <a href="{% url 'home' %}">Volver al Inicio</a>
 </div>
 
+<img src="{% static 'datos.svg' %}" alt="logo" class="datos">
+
+
+
 {% if registro %}
+<div class="datitos">
 <p><strong>Provincia:</strong> {{ registro.provincia }}</p>
 <p><strong>Latitud:</strong> {{ registro.lat }}</p>
 <p><strong>Longitud:</strong> {{ registro.lon }}</p>
@@ -12,20 +92,27 @@
 <p><strong>Radiación Solar (kWh/m²/día):</strong> {{ registro.irr_avg }}</p>
 <p><strong>Viento Promedio (m/s):</strong> {{ registro.wind_avg }}</p>
 <p><em>Última actualización: {{ registro.fecha_actualizacion }}</em></p>
+</div>
 
-<a href="{% url 'elegir_provincia' %}">Cambiar Provincia</a>
+<div class="provincia1">
+	<a href="{% url 'elegir_provincia' %}">Cambiar Provincia</a>
+</div>
+
 
 {% if analysis and analysis.seleccionados %}
 	<hr>
-	<h3>Materiales seleccionados</h3>
+	<img src="{% static 'mselec.svg' %}" alt="logo" class="mselec">
 	<ul>
 	{% for m in analysis.seleccionados %}
 		<li><strong>{{ m.nombre }}</strong> — {{ m.get_categoria_display }}</li>
 	{% endfor %}
 	</ul>
 
-	<h3>Recomendaciones ecológicas alternativas</h3>
-	<p>Basado en las condiciones climáticas de tu provincia y los materiales que planeabas usar, sugerimos alternativas más ecológicas (si las hay):</p>
+	<img src="{% static 'recomendados.svg' %}" alt="logo" class="recom">
+	<p class="texto">
+    Basado en las condiciones climáticas de tu provincia y los materiales que planeabas usar, sugerimos alternativas más ecológicas (si las hay):
+	</p>
+
 	<div>
 	{% for item in analysis.recommendations %}
 		<div style="margin-bottom:12px;padding:8px;border:1px dashed #ccc;">
@@ -49,3 +136,4 @@
 <p>No has ingresado datos aún.</p>
 <a href="{% url 'elegir_provincia' %}">Seleccionar Provincia</a>
 {% endif %}
+</body>
