@@ -12,20 +12,28 @@
                 		url("{% static 'flor1.svg' %}") right no-repeat,
                 		url("{% static 'flor.svg' %}") center no-repeat;
     		background-size: 100px, 100px, 100px;
-    		background-color: #f0fff4;            
+			background-image: url("{% static 'fondoflor.svg' %}");
+			background-repeat: repeat; 
+			color:#14331c         
 		}
 
 		.datos {
     		width: 400px;
-    		margin: 5px auto;
+    		margin: 100px auto;
     		display: block;
-		}
+		 	transform: scale(1.15);
+    		box-shadow: 0 0 20px #1b330a66;
+    		transition: all 0.3s ease;
+    		z-index: 10;}
 
 		.mselec {
     		width: 400px;
-    		margin: 5px auto;
-			display: block;}
-
+    		margin: 100px auto;
+    		display: block;
+		 	transform: scale(1.15);
+    		box-shadow: 0 0 20px #1b330a66;
+    		transition: all 0.3s ease;
+    		z-index: 10;}
 		.recom{
     		width: 400px;
     		margin: 100px auto;
@@ -63,24 +71,45 @@
 
 		.provincia1 a {
    			text-decoration: none;
-    		color: #eaf7e7;
+    		color: #f7fff6;
 			font-family: Arial, Helvetica, sans-serif;
     		font-weight: bold;
 		}
-
 		.datitos {
     		font-size: 18px;      
-    		line-height: 1;           
-    		margin-bottom: 2px;
-			font-family: Arial, Helvetica, sans-serif; 
+    		line-height: 1.4;           
+    		margin-bottom: 20px;
+    		font-family: Arial, Helvetica, sans-serif; 
+    		color: #f4f7e7 ; 
+			text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* sombra del texto */
+    
+    		background: #2a692c98;;
+    		padding: 30px;
+    		border-radius: 12px;
+    
+    		box-shadow: 0 4px 15px rgba(48, 92, 38, 0.3);
+    
+    		text-shadow: 1px 1px 3px rgba(47, 63, 18, 0.5);
+    
+    		max-width: 6000px;
 		}
 
-		.texto {
-    		font-family: 'Arial', sans-serif; 
-    		font-size: 20px;                   
-    		color: #254422;                    
-    		margin-bottom: 20px;              
-		}
+.texto {
+    font-family: 'Arial', sans-serif; 
+    font-size: 20px;  
+	font-weight: bold;                 
+    color: #ebf1eb; /* verde más vibrante */                   
+    margin-bottom: 20px;
+
+    /* Sombra sutil para resaltar */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+
+    /* Opcional: fondo semi-transparente tipo sticker */
+    background: #2a692c8a; 
+    padding: 8px 12px;
+    border-radius: 8px;
+	box-shadow: 0 4px 15px rgba(48, 92, 38, 0.3);}
+
 
 		hr.separador {
     		border: 0;
@@ -96,11 +125,34 @@
     		margin: 25px 0;
 		}
 
+/* Caja solo para el texto */
+.materialselec {
+    display: inline-block;       /* que la caja se ajuste al contenido */
+    background: rgba(42, 105, 44, 0.6); /* verde semi-transparente */
+    padding: 10px 15px;          /* espacio interno */
+    border-radius: 10px;         /* bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* sombra de la caja */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;           /* engrosa el texto */
+    color: #fff;                 /* color del texto */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* sombra del texto */
+    margin-bottom: 10px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-		.materialselec {
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: 20px;
-		}	
+/* Diferenciar nombre y categoría */
+.materialselec .nombre {
+    color: #dcedc1;
+}
+
+.materialselec .categoria {
+    color: #ffd3b6;
+}
+
+		.materialselec:hover {
+    		transform: translateY(-5px); /* levanta la caja */}
+
 
 		.recomendacion {
     		background: #b2e5a8;
@@ -109,7 +161,7 @@
     		border-radius: 15px;         
     		padding: 15px 20px;          
     		margin-bottom: 20px;         
-    		box-shadow: 0 4px 8px rgba(42, 105, 44, 0.3); 
+    		box-shadow: 0 4px 8px #2a692c4d; 
     		transition: transform 0.3s ease, box-shadow 0.3s ease;
 		}
 
@@ -131,8 +183,6 @@
     		line-height: 1.4;
     		transition: transform 0.2s ease;
 		}
-
-/* Pseudo-elemento para la hoja */
 		.recomendacion ul li::before {
     		content: "";
    			position: absolute;
@@ -146,7 +196,6 @@
     		transition: transform 0.3s ease;
 		}
 
-/* Efecto al pasar el mouse */
 		.recomendacion ul li:hover::before {
     		transform: translateY(-50%) scale(1.3) rotate(-10deg);
 		}
@@ -174,7 +223,7 @@
     </a>
     
 
-<img src="{% static 'datos.svg' %}" alt="logo" class="datos">
+<img src="{% static 'datos1.svg' %}" alt="logo" class="datos">
 
 
 
@@ -195,8 +244,8 @@
 
 
 {% if analysis and analysis.seleccionados %}
-	<hr class="separador">
-	<img src="{% static 'mselec.svg' %}" alt="logo" class="mselec">
+<hr class="separador">
+<img src="{% static 'mselec1.svg' %}" alt="logo" class="mselec">
 <ul>
 {% for m in analysis.seleccionados %}
     <li class="materialselec">
@@ -207,7 +256,7 @@
 </ul>
 
 	<hr class="separador">
-	<img src="{% static 'recomendados.svg' %}" alt="logo" class="recom">
+	<img src="{% static 'recomendados1.svg' %}" alt="logo" class="recom">
 	<p class="texto">
     Basado en las condiciones climáticas de tu provincia y los materiales que planeabas usar, sugerimos alternativas más ecológicas (si las hay):
 	</p>
